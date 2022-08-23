@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tree Survey</title>
+    <style>
+      body {
+        background-image: url("tree-back.jpg");
+        color: white;
+        font-size: 28px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      label {
+        margin-left: 36px;
+      }
+      #title {
+        margin-bottom: 0px;
+        text-align: center;
+      }
+      #subtitle {
+        margin-top: 0px;
+        font-size: 24px;
+        text-align: center;
+      }
+      .main {
+        align-items: center;
+        margin: 10% 10%;
+        display: block;
+        background-color: rgba(174, 170, 170, 0.281);
+        overflow: hidden;
+      }
+
+      input {
+        width: 90%;
+        height: 32px;
+        margin: 10px 20px 10px 36px;
+        border-radius: 4px;
+        border: none;
+        display: block;
+        font-size: 18px;
+        padding: 12px 12px;
+      }
+      #location {
+        display: block;
+        width: 90%;
+        height: 48px;
+        margin: 10px 20px 10px 50px;
+        border-radius: 4px;
+        font-size: 18px;
+      }
+      #gender_title {
+        text-align: center;
+      }
+      #male,
+      #female,
+      #others {
+        width: 5%;
+        display: inline-block;
+        height: 20px;
+      }
+      #one,
+      #two,
+      #three {
+        display: inline-block;
+        width: 8%;
+        height: 20px;
+      }
+      #plantext {
+        text-align: center;
+      }
+      #commentbox {
+        width: 98%;
+
+        border-radius: 6px;
+        font-size: 24px;
+        padding: 12px 12px;
+      }
+      #commenttitle {
+        text-align: center;
+      }
+      #continets {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h2 id="title">Tree Survey Form</h2>
+      <p id="subtitle">A Survey form on the health of the environment</p>
+      <form action="">
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Enter your name e.g John Doe"
+        />
+        <br />
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="xyz@someplace.com" />
+        <br />
+        <label for="age">Age[Optional]</label>
+        <input type="number" id="age" />
+
+        <p id="continets">Select continent of residence</p>
+        <select name="continents" id="location">
+          <option value="Asia">Asia</option>
+          <option value="Australia">Australia</option>
+          <option value="Europe">Europe</option>
+          <option value="North-America">North-America</option>
+          <option value="Africa">Africa</option>
+        </select>
+        <p id="gender_title">Choose your prefered gender</p>
+        <input type="radio" name="gender" id="male" />
+        <label for="male">Male</label> <br />
+        <input type="radio" name="gender" id="female" />
+        <label for="female">Female</label> <br />
+        <input type="radio" name="gender" id="others" />
+        <label for="others">Others</label>
+        <p id="plantext">Please select atleast one of the options below:</p>
+        <input type="checkbox" name="check" id="one" />
+        <label for="one">I have planted a tree or any other plant</label><br />
+        <input type="checkbox" name="check1" id="two" />
+        <label for="two"
+          >I take part in community service for the environment.</label
+        ><br />
+        <input type="checkbox" name="check3" id="three" />
+        <label for="three"> I promise to plant more from now on</label>
+        <h2 id="commenttitle">Any Comments or suggestions</h2>
+        <textarea
+          placeholder="Comments/Suggestions..."
+          id="commentbox"
+          cols="30"
+          rows="30"
+        ></textarea>
+      </form>
+    </div>
+  </body>
+</html>
